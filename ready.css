@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F0F2F5;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.content {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.h2{
+    padding: 20px;
+}
+
+.img img {
+   height: auto;
+    width: 250px;
+}
+
+.header{
+    margin-left: 550px;
+}
+
+.forma{
+    padding: 10px;
+}
+
+.controle{
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    position:relative;
+}
+
+.controle label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.controle input{
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+    padding: 12px;
+}
+
+.controle i{
+   position: relative;
+   top: 45px;
+   right: 10px;
+   visibility: hidden;
+}
+
+.controle small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.forma button{
+    background-color: #FFD814;
+    border: 2px solid #FFD814;
+    color: #0F1108;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.controle.success input{
+    border-color: #2ecc71;
+}
+
+.controle.error input{
+    border-color: #e74c3c;
+}
+
+.controle.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.controle.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.controle.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
